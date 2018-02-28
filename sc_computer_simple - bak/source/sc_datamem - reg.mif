@@ -1,0 +1,45 @@
+DEPTH = 64;           % Memory depth and width are required %
+WIDTH = 32;           % Enter a decimal number %
+ADDRESS_RADIX = HEX;  % Address and value radixes are optional %
+DATA_RADIX = HEX;     % Enter BIN, DEC, HEX, or OCT; unless %
+CONTENT               % otherwise specified, radixes = HEX %
+
+BEGIN
+[0..3F] : 00000000;   % Range--Every address from 0 to 3F = 00000000 %
+
+       0 : 00002040;       %(0) data[0] %
+       1 : 00002079;       %(4) data[1] %
+       2 : 00002024;       %(8) data[2] %
+       3 : 00002030;       %(C) data[3] %
+       4 : 00002019;       %(10) data[4] %
+       5 : 00002012;       %(14) data[5] %
+       6 : 00002002;       %(18) data[6] %
+       7 : 00002078;       %(1C) data[7] %
+       8 : 00002000;       %(20) data[8] %
+       9 : 00002010;       %(24) data[9] %
+       A : 00003CC0;       %(28) data[10] %
+       B : 00003CF9;       %(2C) data[11] %
+       C : 00003CA4;       %(30) data[12] %
+       D : 00003CB0;       %(34) data[13] %
+       E : 00003C99;       %(38) data[14] %
+       F : 00003C92;       %(3C) data[15] %
+      10 : 00003C82;       %(40) data[16] %
+      11 : 00003CF8;       %(44) data[17] %
+      12 : 00003C80;       %(48) data[18] %
+      13 : 00003C90;       %(4C) data[19] %
+      14 : 00001240;       %(50) data[20] %
+      15 : 00001279;       %(54) data[21] %
+      16 : 00001224;       %(58) data[22] %
+      17 : 00001230;       %(5C) data[23] %
+      18 : 00001219;       %(60) data[24] %
+      19 : 00001212;       %(64) data[25] %
+      1A : 00001202;       %(68) data[26] %
+      1B : 00001278;       %(6C) data[27] %
+      1C : 00001200;       %(70) data[28] %
+      1D : 00001210;       %(74) data[29] %
+      1E : 00001840;       %(78) data[30] %
+      1F : 00001879;       %(7C) data[31] %
+      20 : 08102040;       %(80) data[32] %
+      21 : 00102040;       %(84) data[33] %
+      22 : 00001819;       %(88) data[34] %
+End ;

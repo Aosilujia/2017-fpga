@@ -1,0 +1,253 @@
+D:/quartus_project/CPU1/sc_cu.v {1 {vlog -work work D:/quartus_project/CPU1/sc_cu.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sc_cu
+
+Top level modules:
+	sc_cu
+
+} {} {}} D:/quartus_project/CPU1/io_output_reg.v {1 {vlog -work work D:/quartus_project/CPU1/io_output_reg.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module io_output_reg
+
+Top level modules:
+	io_output_reg
+
+} {} {}} D:/quartus_project/CPU1/dff32.v {1 {vlog -work work D:/quartus_project/CPU1/dff32.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module dff32
+
+Top level modules:
+	dff32
+
+} {} {}} D:/quartus_project/CPU1/sc_datamem.v {1 {vlog -work work D:/quartus_project/CPU1/sc_datamem.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sc_datamem
+
+Top level modules:
+	sc_datamem
+
+} {} {}} D:/quartus_project/CPU1/io_input_mux.v {1 {vlog -work work D:/quartus_project/CPU1/io_input_mux.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module io_input_mux
+
+Top level modules:
+	io_input_mux
+
+} {} {}} D:/quartus_project/CPU1/alu.v {1 {vlog -work work D:/quartus_project/CPU1/alu.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} D:/quartus_project/CPU1/sc_instmen.v {1 {vlog -work work D:/quartus_project/CPU1/sc_instmen.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sc_instmem
+
+Top level modules:
+	sc_instmem
+
+} {} {}} D:/quartus_project/CPU1/altera_mf.v {1 {vlog -work work D:/quartus_project/CPU1/altera_mf.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module lcell
+-- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+-- Compiling module ALTERA_MF_HINT_EVALUATION
+-- Compiling module ALTERA_DEVICE_FAMILIES
+-- Compiling module dffp
+-- Compiling module pll_iobuf
+-- Compiling module stx_m_cntr
+-- Compiling module stx_n_cntr
+-- Compiling module stx_scale_cntr
+-- Compiling module MF_pll_reg
+-- Compiling module MF_stratix_pll
+-- Compiling module arm_m_cntr
+-- Compiling module arm_n_cntr
+-- Compiling module arm_scale_cntr
+-- Compiling module MF_stratixii_pll
+-- Compiling module ttn_m_cntr
+-- Compiling module ttn_n_cntr
+-- Compiling module ttn_scale_cntr
+-- Compiling module MF_stratixiii_pll
+-- Compiling module cda_m_cntr
+-- Compiling module cda_n_cntr
+-- Compiling module cda_scale_cntr
+-- Compiling module MF_cycloneiii_pll
+-- Compiling module MF_cycloneiiigl_m_cntr
+-- Compiling module MF_cycloneiiigl_n_cntr
+-- Compiling module MF_cycloneiiigl_scale_cntr
+-- Compiling module cycloneiiigl_post_divider
+-- Compiling module MF_cycloneiiigl_pll
+-- Compiling module altpll
+-- Compiling module altlvds_rx
+-- Compiling module stratix_lvds_rx
+-- Compiling module stratixgx_dpa_lvds_rx
+-- Compiling module stratixii_lvds_rx
+-- Compiling module flexible_lvds_rx
+-- Compiling module stratixiii_lvds_rx
+-- Compiling module stratixiii_lvds_rx_channel
+-- Compiling module stratixiii_lvds_rx_dpa
+-- Compiling module altlvds_tx
+-- Compiling module stratixv_local_clk_divider
+-- Compiling module stratix_tx_outclk
+-- Compiling module stratixii_tx_outclk
+-- Compiling module flexible_lvds_tx
+-- Compiling module dcfifo_dffpipe
+-- Compiling module dcfifo_fefifo
+-- Compiling module dcfifo_async
+-- Compiling module dcfifo_sync
+-- Compiling module dcfifo_low_latency
+-- Compiling module dcfifo_mixed_widths
+-- Compiling module dcfifo
+-- Compiling module altaccumulate
+-- Compiling module altmult_accum
+-- Compiling module altmult_add
+-- Compiling module altfp_mult
+-- Compiling module altsqrt
+-- Compiling module altclklock
+-- Compiling module altddio_in
+-- Compiling module altddio_out
+-- Compiling module altddio_bidir
+-- Compiling module altdpram
+-- Compiling module altsyncram
+-- Compiling module alt3pram
+-- Compiling module parallel_add
+-- Compiling module scfifo
+-- Compiling module altshift_taps
+-- Compiling module a_graycounter
+-- Compiling module altsquare
+-- Compiling module altera_std_synchronizer
+-- Compiling module altera_std_synchronizer_bundle
+-- Compiling module alt_cal
+-- Compiling module alt_cal_mm
+-- Compiling module alt_cal_c3gxb
+-- Compiling module alt_cal_sv
+-- Compiling module alt_cal_av
+-- Compiling module alt_aeq_s4
+-- Compiling module alt_eyemon
+-- Compiling module alt_dfe
+-- Compiling module signal_gen
+-- Compiling module jtag_tap_controller
+-- Compiling module dummy_hub
+-- Compiling module sld_virtual_jtag
+-- Compiling module sld_signaltap
+-- Compiling module altstratixii_oct
+-- Compiling module altparallel_flash_loader
+-- Compiling module altserial_flash_loader
+-- Compiling module sld_virtual_jtag_basic
+-- Compiling module altsource_probe
+
+Top level modules:
+	lcell
+	altpll
+	altlvds_rx
+	altlvds_tx
+	dcfifo
+	altaccumulate
+	altmult_accum
+	altmult_add
+	altfp_mult
+	altsqrt
+	altclklock
+	altddio_bidir
+	altdpram
+	alt3pram
+	parallel_add
+	scfifo
+	altshift_taps
+	a_graycounter
+	altsquare
+	altera_std_synchronizer_bundle
+	alt_cal
+	alt_cal_mm
+	alt_cal_c3gxb
+	alt_cal_sv
+	alt_cal_av
+	alt_aeq_s4
+	alt_eyemon
+	alt_dfe
+	sld_virtual_jtag
+	sld_signaltap
+	altstratixii_oct
+	altparallel_flash_loader
+	altserial_flash_loader
+	sld_virtual_jtag_basic
+	altsource_probe
+
+} {} {}} D:/quartus_project/CPU1/sc_computer_sim.v {1 {vlog -work work {D:\quartus_project\CPU1\sc_computer_sim.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sc_computer_sim
+
+Top level modules:
+	sc_computer_sim
+
+} {} {}} D:/quartus_project/CPU1/io_input_reg.v {1 {vlog -work work D:/quartus_project/CPU1/io_input_reg.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module io_input_reg
+
+Top level modules:
+	io_input_reg
+
+} {} {}} D:/quartus_project/CPU1/lpm_rom_irom.v {1 {vlog -work work D:/quartus_project/CPU1/lpm_rom_irom.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module lpm_rom_irom
+
+Top level modules:
+	lpm_rom_irom
+
+} {} {}} D:/quartus_project/CPU1/sc_cpu.v {1 {vlog -work work D:/quartus_project/CPU1/sc_cpu.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sc_cpu
+
+Top level modules:
+	sc_cpu
+
+} {} {}} D:/quartus_project/CPU1/regfile.v {1 {vlog -work work D:/quartus_project/CPU1/regfile.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module regfile
+
+Top level modules:
+	regfile
+
+} {} {}} D:/quartus_project/CPU1/lpm_ram_dq_dram.v {1 {vlog -work work D:/quartus_project/CPU1/lpm_ram_dq_dram.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module lpm_ram_dq_dram
+
+Top level modules:
+	lpm_ram_dq_dram
+
+} {} {}} D:/quartus_project/CPU1/mux2x5.v {1 {vlog -work work D:/quartus_project/CPU1/mux2x5.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux2x5
+
+Top level modules:
+	mux2x5
+
+} {} {}} D:/quartus_project/CPU1/mux2x32.v {1 {vlog -work work D:/quartus_project/CPU1/mux2x32.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux2x32
+
+Top level modules:
+	mux2x32
+
+} {} {}} D:/quartus_project/CPU1/dffe32.v {1 {vlog -work work D:/quartus_project/CPU1/dffe32.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module dffe32
+
+Top level modules:
+	dffe32
+
+} {} {}} D:/quartus_project/CPU1/mux4x32.v {1 {vlog -work work D:/quartus_project/CPU1/mux4x32.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux4x32
+
+Top level modules:
+	mux4x32
+
+} {} {}} D:/quartus_project/CPU1/sc_computer.v {1 {vlog -work work D:/quartus_project/CPU1/sc_computer.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sc_computer
+
+Top level modules:
+	sc_computer
+
+} {} {}}
