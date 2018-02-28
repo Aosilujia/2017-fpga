@@ -1,0 +1,91 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "01/07/2018 16:13:37"
+                                                                                
+// Verilog Test Bench template for design : pipelined_computer
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module pipelined_computer_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg clock;
+reg [31:0] in_port0;
+//reg [15:0] in_port1;
+reg mem_clock;
+reg resetn;
+// wires                                               
+wire [31:0]  ealu;
+wire [31:0]  inst;
+wire [31:0]  malu;
+wire [31:0]  out_port0;
+wire [31:0]  out_port1;
+wire [31:0]  pc;
+wire [31:0]  walu;
+// assign statements (if any)                          
+pipelined_computer i1 (
+// port map - connection between master ports and signals/registers   
+	.clock(clock),
+	.ealu(ealu),
+	.in_port0(in_port0),
+	//.in_port1(in_port1),
+	.inst(inst),
+	.malu(malu),
+	.mem_clock(mem_clock),
+	.out_port0(out_port0),
+	.out_port1(out_port1),
+	.pc(pc),
+	.resetn(resetn),
+	.walu(walu)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+	resetn = 0;
+	in_port0 = 0;
+	//in_port1 = 0;
+	#10 resetn = 1; 
+	#10 in_port0 = 8; 
+	//#10 in_port1 = 8; 
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+	clock = 0;
+	while (1) begin
+		mem_clock = ~clock;
+		#10 clock = ~clock;
+		
+	end                                              
+//@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

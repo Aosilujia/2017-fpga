@@ -1,0 +1,82 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cyclonev
+Quartus root          :  d:/verilog/altera/13.1/quartus/bin64/
+Quartus sim root      :  d:/verilog/altera/13.1/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  verilog
+Simulation Mode       :  GUI
+Sim Output File       :  pipeline_computer.vo
+Sim SDF file          :  pipeline_computer__verilog.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script d:/verilog/altera/13.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File pipeline_computer_run_msim_gate_verilog.do already exists - backing up current file as pipeline_computer_run_msim_gate_verilog.do.bak11
+Probing transcript
+ModelSim-Altera Info: # Reading D:/Verilog/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+ModelSim-Altera Info: # do pipeline_computer_run_msim_gate_verilog.do 
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Copying D:\Verilog\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Warning: # ** Warning: Copied D:\Verilog\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+ModelSim-Altera Info: #          Updated modelsim.ini.
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+. {pipeline_computer.vo}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+ModelSim-Altera Info: # -- Compiling module pipelined_computer
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	pipelined_computer
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+D:/Verilog/Myproject/pipeline_computer/simulation/modelsim {D:/Verilog/Myproject/pipeline_computer/simulation/modelsim/pipelined_computer.vt}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+ModelSim-Altera Info: # -- Compiling module pipelined_computer_vlg_tst
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	pipelined_computer_vlg_tst
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs="+acc"  pipelined_computer_vlg_tst
+ModelSim-Altera Info: # vsim +transport_int_delays +transport_path_delays -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps pipelined_computer_vlg_tst 
+ModelSim-Altera Info: # Loading work.pipelined_computer_vlg_tst
+ModelSim-Altera Info: # Loading work.pipelined_computer
+ModelSim-Altera Info: # Loading altera_ver.dffeas
+ModelSim-Altera Info: # Loading sv_std.std
+ModelSim-Altera Info: # Loading altera_lnsim_ver.generic_m10k
+ModelSim-Altera Info: # Loading altera_lnsim_ver.altera_lnsim_functions
+ModelSim-Altera Info: # Loading altera_lnsim_ver.common_28nm_ram_block
+ModelSim-Altera Info: # Loading altera_lnsim_ver.common_28nm_ram_register
+ModelSim-Altera Info: # Loading altera_lnsim_ver.common_28nm_ram_pulse_generator
+ModelSim-Altera Info: # Loading altera_ver.PRIM_GDFF_LOW
+ModelSim-Altera Warning: # ** Warning: Design size of 2 instances exceeds ModelSim ALTERA recommended capacity.
+ModelSim-Altera Info: # This may because you are loading cell libraries which are not recommended with
+ModelSim-Altera Info: # the ModelSim Altera version. Expect performance to be adversely affected.
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # add wave *
+ModelSim-Altera Warning: # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: #           File in use by: jinxueyi  Hostname: RX-78-2  ProcessID: 7596
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: #           Attempting to use alternate WLF file "./wlft47hfy0".
+ModelSim-Altera Warning: # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: #           Using alternate file: ./wlft47hfy0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # view structure
+ModelSim-Altera Info: # .main_pane.structure.interior.cs.body.struct
+ModelSim-Altera Info: # view signals
+ModelSim-Altera Info: # .main_pane.objects.interior.cs.body.tree
+ModelSim-Altera Info: # run -all
+ModelSim-Altera Info: # Running testbench
+ModelSim-Altera Info: # Break key hit 
+ModelSim-Altera Info: # Break in Module pipelined_computer in file pipeline_computer.vo
+Info: NativeLink simulation flow was successful
