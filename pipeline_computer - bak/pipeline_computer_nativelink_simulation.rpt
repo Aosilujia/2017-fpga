@@ -1,0 +1,109 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cyclonev
+Quartus root          :  d:/verilog/altera/13.1/quartus/bin64/
+Quartus sim root      :  d:/verilog/altera/13.1/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  verilog
+Simulation Mode       :  GUI
+Sim Output File       :  pipeline_computer.vo
+Sim SDF file          :  pipeline_computer__verilog.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script d:/verilog/altera/13.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File pipeline_computer_run_msim_gate_verilog.do already exists - backing up current file as pipeline_computer_run_msim_gate_verilog.do.bak11
+Probing transcript
+ModelSim-Altera Info: # Reading D:/Verilog/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+ModelSim-Altera Info: # do pipeline_computer_run_msim_gate_verilog.do 
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Copying D:\Verilog\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Warning: # ** Warning: Copied D:\Verilog\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+ModelSim-Altera Info: #          Updated modelsim.ini.
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+. {pipeline_computer.vo}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+ModelSim-Altera Info: # -- Compiling module pipeline_computer
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	pipeline_computer
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+D:/Verilog/Myproject/pipeline_computer/simulation/modelsim {D:/Verilog/Myproject/pipeline_computer/simulation/modelsim/pipelined_computer.vt}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+ModelSim-Altera Info: # -- Compiling module pipelined_computer_vlg_tst
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	pipelined_computer_vlg_tst
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs="+acc"  pipelined_computer_vlg_tst
+ModelSim-Altera Info: # vsim +transport_int_delays +transport_path_delays -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps pipelined_computer_vlg_tst 
+ModelSim-Altera Info: # Loading work.pipelined_computer_vlg_tst
+ModelSim-Altera Error: # ** Error: (vsim-3033) D:/Verilog/Myproject/pipeline_computer/simulation/modelsim/pipelined_computer.vt(62): Instantiation of 'pipelined_computer' failed. The design unit was not found.
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: #         Region: /pipelined_computer_vlg_tst
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/Verilog/altera/13.1/modelsim_ase/altera/verilog/altera
+ModelSim-Altera Info: #             D:/Verilog/altera/13.1/modelsim_ase/altera/verilog/altera_lnsim
+ModelSim-Altera Info: #             D:/Verilog/altera/13.1/modelsim_ase/altera/verilog/cyclonev
+ModelSim-Altera Info: #             D:/Verilog/altera/13.1/modelsim_ase/altera/verilog/220model
+ModelSim-Altera Info: #             D:/Verilog/altera/13.1/modelsim_ase/altera/verilog/sgate
+ModelSim-Altera Info: #             D:/Verilog/altera/13.1/modelsim_ase/altera/verilog/cyclonev_hssi
+ModelSim-Altera Info: #             D:/Verilog/altera/13.1/modelsim_ase/altera/verilog/altera_mf
+ModelSim-Altera Info: #             D:/Verilog/altera/13.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+ModelSim-Altera Info: #             D:/Verilog/Myproject/pipeline_computer/simulation/modelsim/gate_work
+ModelSim-Altera Info: #             D:/Verilog/Myproject/pipeline_computer/simulation/modelsim/gate_work
+ModelSim-Altera Info: #             D:/Verilog/Myproject/pipeline_computer/simulation/modelsim/gate_work
+ModelSim-Altera Info: # Error loading design
+ModelSim-Altera Info: # Error: Error loading design 
+ModelSim-Altera Info: #        Pausing macro execution 
+ModelSim-Altera Info: # MACRO ./pipeline_computer_run_msim_gate_verilog.do PAUSED at line 12
+Error: Errors encountered while running modelsim do file
+Error: NativeLink simulation flow was NOT successful
+
+
+
+================The following additional information is provided to help identify the cause of error while running nativelink scripts=================
+Nativelink TCL script failed with errorCode:  1
+Nativelink TCL script failed with errorInfo:  1
+    (procedure "launch_sim" line 1)
+    invoked from within
+"launch_sim launch_args_hash"
+    ("eval" body line 1)
+    invoked from within
+"eval launch_sim launch_args_hash"
+    invoked from within
+"if [ info exists ::errorCode ] {
+				set savedCode $::errorCode
+				set savedInfo $::errorInfo
+				error $result $savedInfo $savedCode
+			} else {
+			..."
+    invoked from within
+"if [catch {eval launch_sim launch_args_hash} result ] {
+			set status 1
+			if [ info exists ::errorCode ] {
+				set savedCode $::errorCode
+				set sav..."
+    (procedure "run_sim" line 78)
+    invoked from within
+"run_sim run_sim_args_hash"
+    invoked from within
+"if [ info exists ::errorCode ] {
+			set savedCode $::errorCode
+			set savedInfo $::errorInfo
+			error "$result" $savedInfo $savedCode
+		} else {
+			er..."
+    (procedure "run_eda_simulation_tool" line 330)
+    invoked from within
+"run_eda_simulation_tool eda_opts_hash"
